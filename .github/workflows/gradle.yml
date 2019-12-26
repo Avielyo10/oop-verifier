@@ -1,6 +1,6 @@
 name: Veifier CI
 
-on: 
+on:
   pull_request:
     branches:
       - master
@@ -21,6 +21,7 @@ jobs:
     - name: Get Info
       run: python3 check_submission.py submission_file.txt | tee data.txt
     
+
     - name: Clone and checkout
       run: |
         git clone `cat data.txt | grep git | awk '{print $4}'` cloner-oop/
