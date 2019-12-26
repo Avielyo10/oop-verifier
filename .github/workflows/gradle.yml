@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  test_submition_file:
+  test_submission_file:
 
     runs-on: ubuntu-latest
 
@@ -19,7 +19,7 @@ jobs:
         java-version: 1.8
 
     - name: Get Info
-      run: python3 check_submition.py submition_file.txt | tee data.txt
+      run: python3 check_submission.py submission_file.txt | tee data.txt
     
     - name: Clone and checkout
       run: |
