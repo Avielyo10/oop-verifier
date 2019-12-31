@@ -33,7 +33,6 @@ jobs:
         file resources.txt >> exists.txt
         file src/main/java >> exists.txt
         file src/test/java >> exists.txt
-
         file src/main/java/Ex2 >> exists.txt
         file src/test/java/Ex2 >> exists.txt
 
